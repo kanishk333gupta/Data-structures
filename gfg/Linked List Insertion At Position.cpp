@@ -5,12 +5,7 @@ void insertAtPosition(Node *head, int pos, int data)
     //Your code here
     
     Node * temp =new Node(data) ;
-    //int count = 0 ;
-    
-    if(pos==1) {
-        temp->next = head ;
-         return ;
-    }   
+  
     Node * curr = head ;
     for(int i = 0 ; i <= pos-2 && curr!=NULL; i++){
         curr = curr->next ;
